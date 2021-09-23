@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Nunito";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/nunito-v16-latin-regular.woff") format("woff"),
+       url("../fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/nunito-v16-latin-regular.woff") format("woff"),
+       url("../fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+.page-body {
+  width: 1152px;
+  margin: auto;
+  padding: 0;
+
+  font-family: "Nunito", "Arial", sans-serif;
+  font-style: normal;
+  color: @color-dark;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+}
+
+.transparent-button {
+  border: 1px solid @color-dark;
+  border-radius: 4px;
+}
+
+.bright-button {
+  font-family: inherit;
+  color: @color-light;
+
+  background-color: @color-peach;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+

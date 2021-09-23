@@ -5,28 +5,30 @@
     <title>woodies</title>
     <link rel="stylesheet" href="css/app.min.css">
 </head>
-<body>
+<body class="page-body">
 <header class="page-header">
     <img class="page-header__logo logo" src="images/src/Group%2028.svg" width="192" height="33">
     <nav class="page-header__navigation">
         <ul class="page-header__navigation-list">
-            <li class="page-header__navigation-item"><a href="#home">Home</a></li>
-            <li class="page-header__navigation-item"><a href="#about-us">About Us</a></li>
-            <li class="page-header__navigation-item"><a href="#how-it-works">How it works</a></li>
-            <li class="page-header__navigation-item"><a href="#categories">Categories</a></li>
-            <li class="page-header__navigation-item"><a href="#testimony">Testimony</a></li>
-            <li class="page-header__navigation-item"><a>SIGN UP</a></li>
+            <li class="page-header__navigation-item page-header__navigation-item--active"><a href="#home">Home</a></li>
+            <li class="page-header__navigation-item"><a class="link" href="#about-us">About Us</a></li>
+            <li class="page-header__navigation-item"><a class="link" href="#how-it-works">How it works</a></li>
+            <li class="page-header__navigation-item"><a class="link" href="#categories">Categories</a></li>
+            <li class="page-header__navigation-item"><a class="link" href="#testimony">Testimony</a></li>
+            <li class="page-header__navigation-item"><a class="link transparent-button">SIGN UP</a></li>
         </ul>
     </nav>
 </header>
+
 
 <main class="page-main">
     <section class="page-main__home home">
         <a id="home"></a>
         <p class="home__text">Are you looking for woodden furniture for your place?</p>
         <h1 class="home__title">This is the Right Place</h1>
-        <a class="home__link-explore">Explore Furniture</a>
+        <a class="home__link-explore link bright-button">Explore Furniture</a>
     </section>
+
 
     <section class="page-main__about-us about-us">
         <a id="about-us"></a>
@@ -45,6 +47,7 @@
         </div>
     </section>
 
+
     <section class="page-main__how-it-works how-it-works">
         <a id="how-it-works"></a>
         <div class="how-it-works__title-block title-block">
@@ -58,8 +61,9 @@
             <li class="how-it-works__item">Budgeting</li>
             <li class="how-it-works__item">Production</li>
         </ol>
-        <button class="how-it-works__button">Get Personalized Now</button>
+        <a class="how-it-works__button link bright-button">Get Personalized Now</a>
     </section>
+
 
     <section class="page-main__categories categories">
         <a id="categories"></a>
@@ -71,26 +75,27 @@
         <ul class="categories__list">
             <li class="categories__item">
                 <h3 class="categories__item-title">Desk</h3>
-                <button class="categories__item-button">Shop Now</button>
+                <a class="categories__item-button link transparent-button">Shop Now</a>
             </li>
             <li class="categories__item">
                 <h3 class="categories__item-title">Chair</h3>
-                <button class="categories__item-button">Shop Now</button>
+                <a class="categories__item-button link transparent-button">Shop Now</a>
             </li>
             <li class="categories__item">
                 <h3 class="categories__item-title">Kitchenware</h3>
-                <button class="categories__item-button">Shop Now</button>
+                <a class="categories__item-button link transparent-button">Shop Now</a>
             </li>
             <li class="categories__item">
                 <h3 class="categories__item-title">Book Shelf</h3>
-                <button class="categories__item-button">Shop Now</button>
+                <a class="categories__item-button link transparent-button">Shop Now</a>
             </li>
             <li class="categories__item">
                 <h3 class="categories__item-title">Electronics</h3>
-                <button class="categories__item-button">Shop Now</button>
+                <a class="categories__item-button link transparent-button">Shop Now</a>
             </li>
         </ul>
     </section>
+
 
     <section class="page-main__testimony testimony">
         <a id="testimony"></a>
@@ -99,56 +104,110 @@
             <div class="title-block__element"></div>
             <h2 class="title-block__title">TESTIMONY</h2>
         </div>
+
+        <div class="testimony__wrapper">
+            <div class="testimony__wrapper-for-image">
+                <img src="images/src/Group%2065.jpg" width="240" height="320">
+            </div>
+            <div class="testimony__wrapper-for-image">
+                <img src="images/src/Group%2066.jpg" width="240" height="320">
+            </div>
+
+            <div class="testimony__wrapper-for-feedback-card">
+                <div class="testimony__feedback-card">
+                    <div class="testimony__stars">
+                        <img src="images/src/Star%201.svg" width="24" height="24">
+                        <img src="images/src/Star%201.svg" width="24" height="24">
+                        <img src="images/src/Star%201.svg" width="24" height="24">
+                        <img src="images/src/Star%201.svg" width="24" height="24">
+                        <img src="images/src/Star%201.svg" width="24" height="24">
+                    </div>
+                    <blockquote class="testimony__feedback-text">
+                        My experience with WOODIES is a complete success,
+                        from customed furniture, range of product, modern design,
+                        purchasing experience, the delivery and newsletter.
+                        Litterally everything is great. Thank you!
+                    </blockquote>
+                    <div class="testimony__person">
+                        <div class="testimony__avatar"></div>
+                        <div class="testimony__wrapper-for-name">
+                            <span class="testimony__name"></span>
+                            <span class="testimony__name"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="testimony__button testimony__button--previous testimony__button--blocked">Previous</button>
+                    <button class="testimony__button testimony__button--next">Next</button>
+                </div>
+            </div>
+        </div>
+
         <div>
-            <img src="images/src/Group%2065.jpg" width="240" height="320">
-            <img src="images/src/Group%2066.jpg" width="240" height="320">
+            <div class="testimony__location testimony__location--active"></div>
+            <div class="testimony__location"></div>
+            <div class="testimony__location"></div>
+            <div class="testimony__location"></div>
         </div>
     </section>
 
-    <section class="page-main__newsletter newsletter"></section>
+    <section class="page-main__newsletter newsletter">
+        <div class="newsletter__wrapper-for-text">
+            <h3 class="newsletter__title">Subscribe to our newsletter</h3>
+            <p class="newsletter__text">A monthly digest of the new WOODIES products, hot offers, and resources.</p>
+        </div>
+        <form class="newsletter__form">
+            <input class="newsletter__input" type="text" placeholder="Your email address">
+            <button class="newsletter__button bright-button">Subscribe</button>
+        </form>
+    </section>
 </main>
 
 <footer class="page-footer">
-    <div class="page-footer__info">
-        <img class="page-footer__logo logo" src="images/src/Group%2028.svg" width="192" height="33">
-        <ul class="page-footer__list">
-            <li class="page-footer__item">(012) 8967453</li>
-            <li class="page-footer__item">woodies@gmail.com</li>
-            <li class="page-footer__item">Jakarta, Indonesia</li>
-        </ul>
+    <div class="page-footer__wrapper">
+        <div class="page-footer__info">
+            <img class="page-footer__logo logo" src="images/src/Group%2028.svg" width="192" height="33">
+            <ul class="page-footer__list">
+                <li class="page-footer__item">(012) 8967453</li>
+                <li class="page-footer__item">woodies@gmail.com</li>
+                <li class="page-footer__item">Jakarta, Indonesia</li>
+            </ul>
+        </div>
+        <div class="page-footer__product">
+            <h4 class="page-footer__title">Product</h4>
+            <ul class="page-footer__list">
+                <li class="page-footer__item"><a class="link">Furnitures</a></li>
+                <li class="page-footer__item"><a class="link">Packages</a></li>
+                <li class="page-footer__item"><a class="link">Services</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__resources">
+            <h4 class="page-footer__title">Resources</h4>
+            <ul class="page-footer__list">
+                <li class="page-footer__item"><a class="link">Blog</a></li>
+                <li class="page-footer__item"><a class="link">FAQs</a></li>
+                <li class="page-footer__item"><a class="link">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__company">
+            <h4 class="page-footer__title">Company</h4>
+            <ul class="page-footer__list">
+                <li class="page-footer__item"><a class="link">About Us</a></li>
+                <li class="page-footer__item"><a class="link">Jobs</a></li>
+                <li class="page-footer__item"><a class="link">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__social">
+            <h4 class="page-footer__title">Follow Us</h4>
+            <ul class="page-footer__list">
+                <li class="page-footer__item"><a class="link">Facebook</a></li>
+                <li class="page-footer__item"><a class="link">Instagram</a></li>
+                <li class="page-footer__item"><a class="link">Twitter</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="page-footer__product">
-        <h4 class="page-footer__title">Product</h4>
-        <ul class="page-footer__list">
-            <li class="page-footer__item"><a>Furnitures</a></li>
-            <li class="page-footer__item"><a>Packages</a></li>
-            <li class="page-footer__item"><a>Services</a></li>
-        </ul>
-    </div>
-    <div class="page-footer__resources">
-        <h4 class="page-footer__title">Resources</h4>
-        <ul class="page-footer__list">
-            <li class="page-footer__item"><a>Blog</a></li>
-            <li class="page-footer__item"><a>FAQs</a></li>
-            <li class="page-footer__item"><a>Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="page-footer__company">
-        <h4 class="page-footer__title">Company</h4>
-        <ul class="page-footer__list">
-            <li class="page-footer__item"><a>About Us</a></li>
-            <li class="page-footer__item"><a>Jobs</a></li>
-            <li class="page-footer__item"><a>Our Team</a></li>
-        </ul>
-    </div>
-    <div class="page-footer__social">
-        <h4 class="page-footer__title">Follow Us</h4>
-        <ul class="page-footer__list">
-            <li class="page-footer__item"><a>Facebook</a></li>
-            <li class="page-footer__item"><a>Instagram</a></li>
-            <li class="page-footer__item"><a>Twitter</a></li>
-        </ul>
-    </div>
+    <span class="page-footer__data">© 2020 WOODIES</span>
 </footer>
 </body>
 </html>
