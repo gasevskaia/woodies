@@ -1,0 +1,43 @@
+.title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 40px;
+}
+
+.title-block__text {
+  position: relative;
+
+  margin: 0;
+  padding: 0 15px 0 0;
+
+  font-weight: bold;
+  font-size: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -40px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../images/src/GroupEl.svg");
+  }
+}
+
+.title-block__element {
+  flex-grow: 1;
+  height: 1px;
+
+  background-color: @color-dark;
+}
+
+.title-block__title {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 72px;
+  color: @color-light-gray;
+}
