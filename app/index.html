@@ -7,55 +7,56 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-    <img class="page-header__logo logo" src="images/src/Group%2028.svg" width="192" height="33">
+    <div class="page-header__wrapper-for-logo">
+        <img class="page-header__logo logo" src="images/src/Group%2028.svg" width="192" height="33">
+    </div>
     <nav class="page-header__navigation">
-        <ul class="page-header__navigation-list">
-            <li class="page-header__navigation-item page-header__navigation-item--active"><a href="#home">Home</a></li>
-            <li class="page-header__navigation-item"><a class="link" href="#about-us">About Us</a></li>
-            <li class="page-header__navigation-item"><a class="link" href="#how-it-works">How it works</a></li>
-            <li class="page-header__navigation-item"><a class="link" href="#categories">Categories</a></li>
-            <li class="page-header__navigation-item"><a class="link" href="#testimony">Testimony</a></li>
-            <li class="page-header__navigation-item"><a class="link transparent-button">SIGN UP</a></li>
+        <ul class="page-header__navigation-list list-style">
+            <li class="page-header__navigation-item page-header__navigation-item--home page-header__navigation-item--navigation-page page-header__navigation-item--active"><a class="link" href="#home">Home</a></li>
+            <li class="page-header__navigation-item page-header__navigation-item--about-us page-header__navigation-item--navigation-page"><a class="link" href="#about-us">About Us</a></li>
+            <li class="page-header__navigation-item page-header__navigation-item--how-it-works page-header__navigation-item--navigation-page"><a class="link" href="#how-it-works">How it works</a></li>
+            <li class="page-header__navigation-item page-header__navigation-item--categories page-header__navigation-item--navigation-page"><a class="link" href="#categories">Categories</a></li>
+            <li class="page-header__navigation-item page-header__navigation-item--testimony page-header__navigation-item--navigation-page"><a class="link" href="#testimony">Testimony</a></li>
+            <li class="page-header__navigation-item"><a class="page-header__signup-button link transparent-button">SIGN UP</a></li>
         </ul>
     </nav>
 </header>
 
 
 <main class="page-main">
-    <section class="page-main__home home">
-        <a id="home"></a>
-        <p class="home__text">Are you looking for woodden furniture for your place?</p>
-        <h1 class="home__title">This is the Right Place</h1>
-        <a class="home__link-explore link bright-button">Explore Furniture</a>
+    <section class="page-main__home home" id="home">
+        <div class="home__wrapper">
+            <p class="home__text">Are you looking for <b class="home__text-emphasis">woodden furniture</b> for your place?</p>
+            <h1 class="home__title">This is the Right Place</h1>
+            <a class="home__link-explore link bright-button">Explore Furniture</a>
+        </div>
     </section>
 
 
-    <section class="page-main__about-us about-us">
-        <a id="about-us"></a>
+    <section class="page-main__about-us about-us" id="about-us">
         <div class="about-us__title-block title-block">
             <p class="title-block__text">Who we are</p>
             <div class="title-block__element"></div>
             <h2 class="title-block__title">ABOUT US</h2>
         </div>
-        <div class="about-us__wrapper-for-text">
+        <div class="about-us__wrapper-for-text about-us__wrapper-for-text--first">
             <h3 class="about-us__title"><b class="about-us__title-emphasis">WOODIES</b> is the <b class="about-us__title-emphasis">home of modern wooden furniture</b></h3>
             <p class="about-us__text">the answer to your need for furniture with shapes, sizes and colors.</p>
         </div>
-        <div class="about-us__wrapper-for-text">
+        <div class="about-us__wrapper-for-text about-us__wrapper-for-text--second">
             <h3 class="about-us__title">Customized furniture <b class="about-us__title-emphasis">made just for you</b></h3>
-            <p class="about-us__text">the answer to your need for furniture with shapes, sizes and colors.</p>
+            <p class="about-us__text">Get it easy to adjust furniture to the shape and size of your dwelling or business.</p>
         </div>
     </section>
 
 
-    <section class="page-main__how-it-works how-it-works">
-        <a id="how-it-works"></a>
+    <section class="page-main__how-it-works how-it-works" id="how-it-works">
         <div class="how-it-works__title-block title-block">
             <p class="title-block__text">How to custom</p>
             <div class="title-block__element"></div>
             <h2 class="title-block__title">HOW IT WORKS</h2>
         </div>
-        <ol class="how-it-works__list">
+        <ol class="how-it-works__list list-style">
             <li class="how-it-works__item">Choose Design</li>
             <li class="how-it-works__item">Area measuring</li>
             <li class="how-it-works__item">Budgeting</li>
@@ -65,14 +66,13 @@
     </section>
 
 
-    <section class="page-main__categories categories">
-        <a id="categories"></a>
+    <section class="page-main__categories categories" id="categories">
         <div class="categories__title-block title-block">
             <p class="title-block__text">What we have</p>
             <div class="title-block__element"></div>
             <h2 class="title-block__title">CATEGORIES</h2>
         </div>
-        <ul class="categories__list">
+        <ul class="categories__list list-style">
             <li class="categories__item">
                 <h3 class="categories__item-title">Desk</h3>
                 <a class="categories__item-button link transparent-button">Shop Now</a>
@@ -97,8 +97,7 @@
     </section>
 
 
-    <section class="page-main__testimony testimony">
-        <a id="testimony"></a>
+    <section class="page-main__testimony testimony" id="testimony">
         <div class="testimony__title-block title-block">
             <p class="title-block__text">What they say</p>
             <div class="title-block__element"></div>
@@ -168,7 +167,7 @@
     <div class="page-footer__wrapper">
         <div class="page-footer__info">
             <img class="page-footer__logo logo" src="images/src/Group%2028.svg" width="192" height="33">
-            <ul class="page-footer__list">
+            <ul class="page-footer__list list-style">
                 <li class="page-footer__item">(012) 8967453</li>
                 <li class="page-footer__item">woodies@gmail.com</li>
                 <li class="page-footer__item">Jakarta, Indonesia</li>
@@ -176,7 +175,7 @@
         </div>
         <div class="page-footer__product">
             <h4 class="page-footer__title">Product</h4>
-            <ul class="page-footer__list">
+            <ul class="page-footer__list list-style">
                 <li class="page-footer__item"><a class="link">Furnitures</a></li>
                 <li class="page-footer__item"><a class="link">Packages</a></li>
                 <li class="page-footer__item"><a class="link">Services</a></li>
@@ -184,7 +183,7 @@
         </div>
         <div class="page-footer__resources">
             <h4 class="page-footer__title">Resources</h4>
-            <ul class="page-footer__list">
+            <ul class="page-footer__list list-style">
                 <li class="page-footer__item"><a class="link">Blog</a></li>
                 <li class="page-footer__item"><a class="link">FAQs</a></li>
                 <li class="page-footer__item"><a class="link">Contact Us</a></li>
@@ -192,7 +191,7 @@
         </div>
         <div class="page-footer__company">
             <h4 class="page-footer__title">Company</h4>
-            <ul class="page-footer__list">
+            <ul class="page-footer__list list-style">
                 <li class="page-footer__item"><a class="link">About Us</a></li>
                 <li class="page-footer__item"><a class="link">Jobs</a></li>
                 <li class="page-footer__item"><a class="link">Our Team</a></li>
@@ -200,7 +199,7 @@
         </div>
         <div class="page-footer__social">
             <h4 class="page-footer__title">Follow Us</h4>
-            <ul class="page-footer__list">
+            <ul class="page-footer__list list-style">
                 <li class="page-footer__item"><a class="link">Facebook</a></li>
                 <li class="page-footer__item"><a class="link">Instagram</a></li>
                 <li class="page-footer__item"><a class="link">Twitter</a></li>
