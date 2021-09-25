@@ -1,0 +1,85 @@
+.categories {
+  padding: 120px 100px 0;
+}
+
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.categories__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 280px;
+  height: 400px;
+  margin: 40px 0 0;
+  padding: 24px 16px;
+
+  border-top-right-radius: 110px;
+  border-bottom-left-radius: 110px;
+
+  &:nth-child(3n+1) {
+    margin: 40px 56px 0 0;
+
+    background-color: @color-pink;
+  }
+
+  &:nth-child(3n+2) {
+    margin: 40px 56px 0 0;
+
+    background-color: @color-light-peach;
+  }
+
+  &:nth-child(3n+3) {
+    background-color: @color-blue;
+  }
+}
+
+.categories__item--desk {
+  background-image: url("../images/src/tables.png");
+  background-repeat: no-repeat;
+  background-position: -70px 80px;
+}
+
+.categories__item--chair {
+  background-image: url("../images/src/chair.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories__item--kitchenware {
+  background-image: url("../images/src/plates.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories__item--book-shelf {
+  background-image: url("../images/src/cupboard.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories__item--electronics {
+  background-image: url("../images/src/radio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.categories__item-title {
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.categories__item-button {
+  width: 123px;
+  height: 40px;
+  margin: 0 0 0 auto;
+
+  font-weight: 600;
+  font-size: 18px;
+}
