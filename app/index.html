@@ -12,12 +12,24 @@
     </div>
     <nav class="page-header__navigation">
         <ul class="page-header__navigation-list list-style">
-            <li class="page-header__navigation-item page-header__navigation-item--home page-header__navigation-item--navigation-page page-header__navigation-item--active"><a class="link" href="#home">Home</a></li>
-            <li class="page-header__navigation-item page-header__navigation-item--about-us page-header__navigation-item--navigation-page"><a class="link" href="#about-us">About Us</a></li>
-            <li class="page-header__navigation-item page-header__navigation-item--how-it-works page-header__navigation-item--navigation-page"><a class="link" href="#how-it-works">How it works</a></li>
-            <li class="page-header__navigation-item page-header__navigation-item--categories page-header__navigation-item--navigation-page"><a class="link" href="#categories">Categories</a></li>
-            <li class="page-header__navigation-item page-header__navigation-item--testimony page-header__navigation-item--navigation-page"><a class="link" href="#testimony">Testimony</a></li>
-            <li class="page-header__navigation-item"><a class="page-header__signup-button link transparent-button">SIGN UP</a></li>
+            <li class="page-header__navigation-item page-header__navigation-item--home page-header__navigation-item--navigation-page page-header__navigation-item--active">
+                <a class="link" href="#home">Home</a>
+            </li>
+            <li class="page-header__navigation-item page-header__navigation-item--about-us page-header__navigation-item--navigation-page">
+                <a class="link" href="#about-us">About Us</a>
+            </li>
+            <li class="page-header__navigation-item page-header__navigation-item--how-it-works page-header__navigation-item--navigation-page">
+                <a class="link" href="#how-it-works">How it works</a>
+            </li>
+            <li class="page-header__navigation-item page-header__navigation-item--categories page-header__navigation-item--navigation-page">
+                <a class="link" href="#categories">Categories</a>
+            </li>
+            <li class="page-header__navigation-item page-header__navigation-item--testimony page-header__navigation-item--navigation-page">
+                <a class="link" href="#testimony">Testimony</a>
+            </li>
+            <li class="page-header__navigation-item">
+                <a class="page-header__signup-button link transparent-button">SIGN UP</a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -125,53 +137,57 @@
         </div>
 
         <div class="testimony__wrapper">
-            <div class="testimony__wrapper-for-image">
-                <img src="images/src/Group%2065.jpg" width="240" height="320">
-            </div>
-            <div class="testimony__wrapper-for-image">
-                <img src="images/src/Group%2066.jpg" width="240" height="320">
-            </div>
+            <div class="testimony__wrapper-for-image testimony__wrapper-for-image--first"></div>
+            <div class="testimony__wrapper-for-image testimony__wrapper-for-image--second"></div>
 
-            <div class="testimony__wrapper-for-feedback-card">
-                <div class="testimony__feedback-card">
-                    <div class="testimony__stars">
-                        <img src="images/src/Star%201.svg" width="24" height="24">
-                        <img src="images/src/Star%201.svg" width="24" height="24">
-                        <img src="images/src/Star%201.svg" width="24" height="24">
-                        <img src="images/src/Star%201.svg" width="24" height="24">
-                        <img src="images/src/Star%201.svg" width="24" height="24">
-                    </div>
-                    <blockquote class="testimony__feedback-text">
-                        My experience with WOODIES is a complete success,
-                        from customed furniture, range of product, modern design,
-                        purchasing experience, the delivery and newsletter.
-                        Litterally everything is great. Thank you!
-                    </blockquote>
-                    <div class="testimony__person">
-                        <div class="testimony__avatar"></div>
-                        <div class="testimony__wrapper-for-name">
-                            <span class="testimony__name"></span>
-                            <span class="testimony__name"></span>
-                        </div>
-                    </div>
+            <div class="testimony__feedback-card">
+                <div class="testimony__stars">
+                    <img class="testimony__stars-icon" src="images/src/Star%201.svg" width="24" height="24">
+                    <img class="testimony__stars-icon" src="images/src/Star%201.svg" width="24" height="24">
+                    <img class="testimony__stars-icon" src="images/src/Star%201.svg" width="24" height="24">
+                    <img class="testimony__stars-icon" src="images/src/Star%201.svg" width="24" height="24">
+                    <img class="testimony__stars-icon" src="images/src/Star%201.svg" width="24" height="24">
                 </div>
-
-                <div>
-                    <button class="testimony__button testimony__button--previous testimony__button--blocked">Previous</button>
-                    <button class="testimony__button testimony__button--next">Next</button>
+                <blockquote class="testimony__feedback-text">
+                    My experience with WOODIES is a complete success,
+                    from customed furniture, range of product, modern design,
+                    purchasing experience, the delivery and newsletter.
+                    Litterally everything is great. Thank you!
+                </blockquote>
+                <div class="testimony__person">
+                    <div class="testimony__avatar">
+                        <img src="images/src/woman-taking-selfie-while-smiling-1310522 1.jpg" width="60" height="40">
+                    </div>
+                    <div class="testimony__wrapper-for-name">
+                        <span class="testimony__name">Sandra Dewi</span>
+                        <span class="testimony__name">Jakarta Selatan</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div>
-            <div class="testimony__location testimony__location--active"></div>
-            <div class="testimony__location"></div>
-            <div class="testimony__location"></div>
-            <div class="testimony__location"></div>
+        <div class="testimony__navigation">
+            <div class="testimony__wrapper-for-button-toggle">
+                <button class="testimony__button-toggle testimony__button-toggle--previous testimony__button-toggle--blocked-previous">
+                 Previous
+                </button>
+                <button class="testimony__button-toggle testimony__button-toggle--next">
+                   Next
+                </button>
+            </div>
+            <div>
+                <button class="testimony__button-location testimony__button-location--active"></button>
+                <button class="testimony__button-location"></button>
+                <button class="testimony__button-location"></button>
+                <button class="testimony__button-location"></button>
+            </div>
         </div>
+
     </section>
+</main>
 
-    <section class="page-main__newsletter newsletter">
+<footer class="page-footer">
+    <section class="page-footer__newsletter newsletter">
         <div class="newsletter__wrapper-for-text">
             <h3 class="newsletter__title">Subscribe to our newsletter</h3>
             <p class="newsletter__text">A monthly digest of the new WOODIES products, hot offers, and resources.</p>
@@ -181,9 +197,7 @@
             <button class="newsletter__button bright-button">Subscribe</button>
         </form>
     </section>
-</main>
 
-<footer class="page-footer">
     <div class="page-footer__wrapper">
         <div class="page-footer__info">
             <img class="page-footer__logo logo" src="images/src/Group%2028.svg" width="192" height="33">

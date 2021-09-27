@@ -1,3 +1,245 @@
 .testimony {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 610px;
   padding: 120px 100px 0;
 }
+
+.testimony__wrapper {
+  display: flex;
+  margin: 40px 0 0 0;
+}
+
+.testimony__wrapper-for-image {
+  width: 240px;
+  height: 320px;
+  margin: 0 40px 0 0;
+
+  border-top-left-radius: 85px;
+  border-bottom-right-radius: 85px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.testimony__wrapper-for-image--first {
+  background-image: url("../images/src/MaskGroup.jpg");
+  background-position: -90px bottom;
+}
+
+.testimony__wrapper-for-image--second {
+  background-image: url("../images/src/MaskGroup2.jpg");
+  background-position: center bottom;
+}
+
+.testimony__feedback-card {
+  box-sizing: border-box;
+  width: 384px;
+  height: 280px;
+  margin: 0 0 0 8px;
+  padding: 54px 16px;
+
+  border: 1px solid @color-blue;
+  border-top-right-radius: 85px;
+  border-bottom-left-radius: 85px;
+}
+
+.testimony__stars-icon {
+  margin: 0 4px 0 0;
+}
+
+.testimony__feedback-text {
+  margin: 16px 0;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.testimony__person {
+  display: flex;
+  align-items: center;
+}
+
+.testimony__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px 0 0;
+
+
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.testimony__wrapper-for-name {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-gray;
+}
+
+.testimony__wrapper-for-button-toggle {
+  position: absolute;
+  right: 100px;
+  bottom: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 384px;
+  height: 19px;
+}
+
+.testimony__button-toggle {
+  position: relative;
+
+  padding: 0;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.testimony__button-toggle--previous {
+  padding: 0 0 0 42px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    width: 34px;
+    height: 19px;
+
+    background-image: url("../images/src/Arrow1.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.testimony__button-toggle--blocked-previous {
+  padding: 0 0 0 42px;
+
+  color: @color-gray-1;
+
+  cursor: default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    width: 34px;
+    height: 19px;
+
+    background-image: url("../images/src/Arrow1.1.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.testimony__button-toggle--next {
+  padding: 0 42px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    width: 37px;
+    height: 19px;
+
+    background-image: url("../images/src/Arrow2.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.testimony__button-toggle--blocked-next {
+  padding: 0 42px 0 0;
+
+  color: @color-gray-1;
+
+  cursor: default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    width: 37px;
+    height: 19px;
+
+    background-image: url("../images/src/Arrow2.2.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
