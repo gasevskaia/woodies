@@ -2,13 +2,12 @@
   position: relative;
 
   box-sizing: border-box;
-  height: 610px;
   padding: 120px 100px 0;
 }
 
 .testimony__wrapper {
   display: flex;
-  margin: 40px 0 0 0;
+  margin: 40px 0 23px 0;
 }
 
 .testimony__wrapper-for-image {
@@ -87,7 +86,7 @@
 .testimony__wrapper-for-button-toggle {
   position: absolute;
   right: 100px;
-  bottom: 32px;
+  top: 560px;
 
   display: flex;
   justify-content: space-between;
@@ -187,11 +186,30 @@
   }
 }
 
+.testimony__wrapper-for-button-location {
+  display: flex;
+  justify-content: flex-end;
+  height: 9px;
+}
 
+.testimony__button-location {
+  width: 40px;
+  height: 8px;
 
+  border: none;
+  border-radius: 8px;
+  background-color: @color-gray-2;
 
+  cursor: pointer;
 
+  &--active {
+    background-color: @color-peach;
+  }
 
+  &:not(:last-child) {
+    margin: 0 8px 0 0;
+  }
+}
 
 
 
