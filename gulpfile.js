@@ -36,6 +36,13 @@ function images() {
 		.pipe(dest("app/images/dist/"))
 }
 
+function scripts() {
+	return src("app/js/*.js",
+		{
+			base: "app"
+		})
+		.pipe(dest("dist"))
+}
 
 function cleanimg() {
 	return del("app/images/dist/**/*", {force: true})
@@ -61,6 +68,7 @@ function cleandist() {
 
 function startwatch() {
 	watch("app/**/less/**/*", styles);
+	watch("app/js/*", scripts);
 	watch("app/**/*.html").on("change", browserSync.reload);
 	watch("app/images/src/**/*", images);
 }
@@ -70,5 +78,5 @@ exports.browsersync = browsersync;
 exports.styles = styles;
 exports.images = images;
 exports.cleanimg = cleanimg;
-exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+exports.build = series(cleandist, cleanimg, styles, images, buildcopy, scripts);
 exports.default = parallel(cleanimg, styles, images, browsersync, startwatch);
